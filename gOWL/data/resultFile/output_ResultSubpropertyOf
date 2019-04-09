@@ -1,0 +1,5 @@
+<http://swat.cse.lehigh.edu/onto/univ-bench.owl#doctoralDegreeFrom>	<http://swat.cse.lehigh.edu/onto/univ-bench.owl#degreeFrom>
+<http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf>	<http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor>
+<http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor>	<http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf>
+<http://swat.cse.lehigh.edu/onto/univ-bench.owl#mastersDegreeFrom>	<http://swat.cse.lehigh.edu/onto/univ-bench.owl#degreeFrom>
+<http://swat.cse.lehigh.edu/onto/univ-bench.owl#undergraduateDegreeFrom>	<http://swat.cse.lehigh.edu/onto/univ-bench.owl#degreeFrom>

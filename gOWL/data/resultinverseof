@@ -1,0 +1,110 @@
+gquery...
+argc: 3	DB_store:LUBMTBox	
+load VSTree...
+LRUCache initial...
+LRUCache initial finish
+finish loadCache
+finish loadEntityID2FileLineMap
+open KVstore
+finish load
+finish loading
+query is:
+select ?x ?y where{
+?x <http://www.w3.org/2002/07/owl#inverseOf> ?y }
+
+
+
+206: WORKLOAD
+    145: QUERY
+        144: PROLOGUE
+        155: SELECT
+            156: SELECT_CLAUSE
+                199: VAR
+                    200: ?x
+                199: VAR
+                    200: ?y
+            204: WHERE_CLAUSE
+                77: GROUP_GRAPH_PATTERN
+                    185: TRIPLES_SAME_SUBJECT
+                        177: SUBJECT
+                            200: ?x
+                        142: PREDICATE
+                            129: PATH
+                                132: PATH_SEQUENCE
+                                    131: PATH_PRIMARY
+                                        89: <http://www.w3.org/2002/07/owl#inverseOf>
+                        119: OBJECT
+                            200: ?y
+parseTree
+parseTree
+parsePrologue
+parseTree
+parseSelectClause
+parseSelectVar
+parseSelectVar
+parseTree
+parseGroupPattern
+parsePattern
+================================================================================
+select
+var is : 	?x	?y	
+{
+	?x	<http://www.w3.org/2002/07/owl#inverseOf>	?y.
+}
+================================================================================
+after Parsing, used 218ms.
+=====================
+||not well-designed||
+=====================
+IN buildBasicSignature
+select variables: [?x, 0 0]	[?y, 1 1]	
+graph variables: [?x, 0 0]	[?y, 1 1]	
+before new IDList!
+pre2entity
+pre2edge
+OUT encodeBasicQuery
+sparqlSTR:	varNum:0
+
+bq0 :
+Triples: 
+	?x	<http://www.w3.org/2002/07/owl#inverseOf>	?y.
+Vars: 
+	0 : [name=?x] [degree=1] [sig=[738] 
+]
+
+	1 : [name=?y] [degree=1] [sig=[638] 
+]
+
+Edge: 
+[0][0]: type=o	edge_nei_id=1	
+
+[1][0]: type=i	edge_nei_id=0	
+
+pre_id=-1	0:1	0000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000
+
+
+
+
+after Encode, used 0ms.
+after handle, used 0ms.
+after Postprocessing, used 0ms.
+after getFinalResult, used 1ms.
+Total time used: 219ms.
+final result is : 
+?x	?y
+<http://swat.cse.lehigh.edu/onto/univ-bench.owl#degreeFrom>	<http://swat.cse.lehigh.edu/onto/univ-bench.owl#hasAlumnus>
+<http://swat.cse.lehigh.edu/onto/univ-bench.owl#hasFaculty>	<http://swat.cse.lehigh.edu/onto/univ-bench.owl#isPartOfUniversity>
+<http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf>	<http://swat.cse.lehigh.edu/onto/univ-bench.owl#member>
+<_:node1avtapdv3x3>	<http://swat.cse.lehigh.edu/onto/univ-bench.owl#takesCourse>
+<_:node1avtapdv3x5>	<http://swat.cse.lehigh.edu/onto/univ-bench.owl#teachingAssistantOf>
+<_:node1avtapdv3x7>	<http://swat.cse.lehigh.edu/onto/univ-bench.owl#teacherOf>
+<_:node1avtapdv3x10>	<http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf>
+<_:node1avtapdv3x12>	<http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor>
+<_:node1avtapdv3x17>	<http://swat.cse.lehigh.edu/onto/univ-bench.owl#publicationAuthor>
+<_:node1avtapdv3x26>	<http://swat.cse.lehigh.edu/onto/univ-bench.owl#advisor>
+<_:node1avtapdv3x29>	<http://swat.cse.lehigh.edu/onto/univ-bench.owl#orgPublication>
+<_:node1avtapdv3x33>	<http://swat.cse.lehigh.edu/onto/univ-bench.owl#publicationResearch>
+<_:node1avtapdv3x40>	<http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf>
+<_:node1avtapdv3x43>	<http://swat.cse.lehigh.edu/onto/univ-bench.owl#hasExamRecord>
+<_:node1avtapdv3x46>	<http://swat.cse.lehigh.edu/onto/univ-bench.owl#isPartOfUniversity>
+
